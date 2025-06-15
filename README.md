@@ -1,7 +1,10 @@
 ssh-doom
 ==========
 
-I have modified the original ssh-tarpit to this: ssh-doom, where yes, it sends forkbomb sequences, instead of randomness.  Am I evil?
+I have modified the original [https://github.com/Snawoot/ssh-tarpit](ssh-tarpit) to this: ssh-doom, where yes, it sends forkbomb sequences, instead of randomness.  Am I evil?  Also: in the future I may utilize this code to make the honeypot WORSE.  Such is, for programming adventures!
+
+## WARNING: DO NOT HOST THIS ON YOUR PUBLIC VPS: I believe this is ILLEGAL, but I don't actually know
+### USE AT YOUR __OWN__ DISCRETION, I AM NOT RESPONSIBLE FOR YOUR ACTIONS!!!
 
 ## Requirements
 
@@ -9,21 +12,14 @@ I have modified the original ssh-tarpit to this: ssh-doom, where yes, it sends f
 
 ## Installation
 
-
-### From PyPI
-
-Standard Python package installation. This package is available on PyPI:
-
-```
-pip3 install ssh-doom
-```
-
 ### From source
 
 Run within source directory:
 
 ```
 pip3 install .
+OR:
+pipx install .
 ```
 
 ## Usage
@@ -60,3 +56,7 @@ listen options:
                         option to 0 (default: False)
 
 ```
+
+## Notes:
+
+* I'm not sure that ipv6 works, it didn't on my debian, consider using only ipv4 if it gives error, then adjusting your firewall as necessary.
