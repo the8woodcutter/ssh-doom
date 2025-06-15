@@ -59,4 +59,4 @@ listen options:
 
 ## Notes:
 
-* I'm not sure that ipv6 works, it didn't on my debian, consider using only ipv4 if it gives error, then adjusting your firewall as necessary.
+* I'm not sure that ipv6 works, it didn't on my debian, consider using only ipv4 if it gives error, then adjusting your firewall as necessary.  
